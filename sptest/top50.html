@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Top 50 Global Songs</title>
+  <link rel="icon" href="./Materials/logo.png">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body
+    .playlist-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-top: 2rem;
+    }
+    .playlist-item {
+      display: flex;
+      align-items: center;
+      background-color: #232323;
+      padding: 0.75rem;
+      border-radius: 0.5rem;
+      transition: background-color 0.3s;
+    }
+    .playlist-item:hover {
+      background-color: #333;
+    }
+    .playlist-item img {
+      width: 60px;
+      height: 60px;
+      border-radius: 0.5rem;
+      margin-right: 1rem;
+    }
+    .playlist-text {
+      display: flex;
+      flex-direction: column;
+    }
+    .playlist-text .title {
+      font-weight: 600;
+    }
+    .playlist-text .artist {
+      font-size: 0.85rem;
+      opacity: 0.8;
+    }
+    body{
+        font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    margin: 0;
+    background-color: black;
+    color: white;
+    overflow: hidden; /*aanathi data scrollable rakhvo ke nai e definne kari shakay */
+    display: flex;
+    }
+  </style>
+</head>
+<body>
+  <div class="content" style="padding: 2rem;">
+    <h2>Top 50 Global Songs</h2>
+    <div class="playlist-list">
+      <div class="playlist-item">
+        <img src="./Materials/card1img.jpeg" alt="song">
+        <div class="playlist-text">
+          <span class="title">Top Hit - Song 1</span>
+          <span class="artist">A</span>
+        </div>
+      </div>
+      <div class="playlist-item">
+        <img src="./Materials/card5img.jpeg" alt="song">
+        <div class="playlist-text">
+          <span class="title">Top Hit - Song 2</span>
+          <span class="artist">B</span>
+        </div>
+      </div>
+      <div class="playlist-item">
+        <img src="./Materials/card6img.jpeg" alt="song">
+        <div class="playlist-text">
+          <span class="title">Top Hit - Song 3</span>
+          <span class="artist">C</span>
+        </div>
+      </div>
+    
+    </div>
+    <a href="index.html" class="back-btn">Back to Home </a>
+  </div>
+</body>
+</html>
