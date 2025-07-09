@@ -1,64 +1,73 @@
-# 🎵 Spotify-Themed Login & Registration Web App
+# 🎧 Spotify Clone - Web Music Player
 
-This is a **simple login and registration project** built using **HTML, CSS, PHP, and MySQL**, styled in **Spotify's green and black theme**.
-
----
-
-## 🌟 Features
-
-- Clean and stylish **Spotify-inspired UI**
-- **User registration form** (`signup.html`)
-- **User login form** (`login.html`)
-- Data saved to **MySQL database** using `register.php`
-- User authentication with PHP (`login.php`)
-- Redirects user to **home page (`index.html`)** after login
+A responsive front-end Spotify clone web application built with HTML, CSS, PHP, and MySQL. Users can register, login, and browse music content similar to Spotify.
 
 ---
 
-## 🛠 Technologies Used
+## 💡 Features
 
-- **HTML5** – Forms and page structure  
-- **CSS3** – Styling (`style.css` & `login_style.css`)  
-- **PHP** – Backend login/registration logic  
-- **MySQL** – Storing user data via phpMyAdmin (XAMPP)
-
----
-
-## 📁 File List
-
-📦 spotify-login/
-├── index.html → Home page after login
-├── login.html → Login form
-├── signup.html → Registration form
-├── login.php → PHP code to validate login
-├── register.php → PHP code to store user data
-├── style.css → Styling for index.html
-├── login_style.css → Styling for login/signup forms
-└── README.md → Project information
-
+- ✅ User registration and login (PHP & MySQL)
+- ✅ Authentication with session handling
+- ✅ Dashboard with playlist-like layout
+- ✅ Artist sections with redirection to song pages
+- ✅ "Top 50 Global" and "Top Songs India" pages
+- ✅ Audio playback on click using JavaScript
+- ✅ Responsive design using custom CSS
 
 ---
 
-## 🧪 Setup Instructions (Using XAMPP)
+## 🛠️ Tech Stack
 
-1. 📂 Copy the project folder into `C:/xampp/htdocs/`
-2. 🧩 Start Apache and MySQL in XAMPP
-3. 🌐 Visit `http://localhost/spotify-login/signup.html` in your browser
-4. 🛠️ Create a MySQL database:
+- HTML5 & CSS3
+- PHP (without frameworks)
+- MySQL
+- JavaScript (DOM and audio player)
+- Font Awesome Icons
+- Google Fonts
 
-```sql
-CREATE DATABASE spotify;
+---
 
-USE spotify;
+## 📁 Project Structure
 
-CREATE TABLE users (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  fullname VARCHAR(100),
-  email VARCHAR(100) UNIQUE,
-  password VARCHAR(100)
-);
+spotify-clone/
+├── index.html
+├── login.html
+├── signup.html
+├── login.php
+├── register.php
+├── style.css
+├── login_style.css
+├── Materials/
+│ └── [All image assets]
+├── songs/
+│ └── [All mp3 files]
+├── artist pages/
+│ └── [parmish.html, arijit.html, etc.]
+├── top50.html
+├── README.md
 
-👨‍💻 Author
-Sagar Dabhi
-📧 dabhisagar2005@gmail.com
-🎓 Web Development Student
+
+---
+
+## 📝 How to Use
+
+1. Clone or download the repository.
+2. Place project inside `htdocs` folder of XAMPP.
+3. Start Apache & MySQL from XAMPP Control Panel.
+4. Import the provided `spotify.sql` to your MySQL database.
+5. Visit `http://localhost/spotify-clone/` in your browser.
+6. Register and login to explore the features.
+
+---
+
+## 👤 Author
+
+**Sagar Dabhi**  
+📧 [dabhisagar2005@gmail.com](mailto:dabhisagar2005@gmail.com)  
+📍 Bhavnagar, Gujarat, India
+
+---
+
+## 📌 License
+
+This project is for academic/internship demonstration only.
